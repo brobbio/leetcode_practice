@@ -93,7 +93,7 @@ using namespace std;
         if(m==1){
             return make_pair(nums.back(), nums.back()); 
         }else{
-            vector<tuple<int,int>> res(min(k,m-1));
+            vector<tuple<int,int>> res(min(k,m-1));    
             for(int j = 1;j<=min(k,m-1);j++){
                 tuple<int,int> res_nesimo = maxResultado(std::vector<int>(nums.begin()+j, nums.end()), k);
                 res[j-1] = res_nesimo;
